@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📂 Dropbox Clone
 
-## Getting Started
+A modern Dropbox clone built with the latest technologies like **Neon**, **Drizzle ORM**, **Hero UI**, **ImageKit**, and **Clerk** for full-stack development, authentication, business logic, and file storage.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+| Category             | Technology |
+| -------------------- | ----------- |
+| Backend Database     | [Neon](https://neon.tech/) |
+| ORM                  | [Drizzle ORM](https://orm.drizzle.team/docs/get-started/neon-new) |
+| Frontend UI          | [Hero UI](https://www.hero-ui.dev/) |
+| Authentication       | [Clerk](https://clerk.dev/) |
+| Media Storage & CDN  | [ImageKit](https://imagekit.io/) |
+| Hosting/Deployment   | (Choose your platform like Vercel, AWS, etc.) |
+
+---
+
+## ✨ Features
+
+- 🔒 **Authentication** using Clerk (email/password, OAuth)
+- 🗂 **File Uploading and Storage** with ImageKit
+- 🧠 **Business Logic** handled through clean architecture
+- 📦 **Cloud Storage** backend using Neon PostgreSQL
+- ⚡ **Modern UI/UX** with Hero UI components
+- 📄 **Folder Management**, **File Sharing**, and **Preview**
+- 🔎 **Search and Filter** through uploaded files
+- 🧹 **Trash Management** and **File Recovery**
+
+---
+
+## 📚 Documentation Links
+
+- **Drizzle ORM with Neon**: [Get Started Guide](https://orm.drizzle.team/docs/get-started/neon-new)
+- **Clerk Authentication**: [Clerk Docs](https://clerk.dev/docs)
+- **ImageKit for File Storage**: [ImageKit Docs](https://docs.imagekit.io/)
+- **Hero UI Components**: [Hero UI Documentation](https://www.hero-ui.dev/docs)
+- **Neon PostgreSQL Database**: [Neon Docs](https://neon.tech/docs)
+
+---
+
+## 🏗 Project Structure
+
+```plaintext
+├── app/                # Frontend Application (Next.js, React, etc.)
+│   ├── components/      # Reusable UI components (Hero UI)
+│   ├── pages/           # Routes and Pages
+│   ├── hooks/           # Custom Hooks (e.g., useAuth, useUpload)
+│   ├── utils/           # Utilities (e.g., formatters, validators)
+├── server/             # API Routes, Server Actions
+│   ├── db/              # Drizzle ORM Setup with Neon
+│   ├── auth/            # Clerk integration
+│   ├── storage/         # ImageKit upload/download services
+├── public/             # Static Assets
+├── .env.local          # Environment Variables
+├── README.md           # Project Overview (this file)
+
 ```
+# 📦 Deployment
+You can deploy the application easily on platforms like:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ** Vercel
+- ** Netlify
+- ** AWS Amplify
