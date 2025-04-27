@@ -13,7 +13,6 @@ A modern Dropbox clone built with the latest technologies like **Neon**, **Drizz
 | Frontend UI          | [Hero UI](https://www.hero-ui.dev/) |
 | Authentication       | [Clerk](https://clerk.dev/) |
 | Media Storage & CDN  | [ImageKit](https://imagekit.io/) |
-| Hosting/Deployment   | (Choose your platform like Vercel, AWS, etc.) |
 
 ---
 
